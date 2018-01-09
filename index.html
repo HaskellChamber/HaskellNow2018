@@ -16,6 +16,7 @@
 <link href="css/responsive.css" rel="stylesheet">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
 </head>
 
 
@@ -723,11 +724,16 @@
                         <p>Please subscribe to our newsletter to stay updated with latest news regarding the conference!</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <form method="post" action="index.html" class="subscribe-form">
-                        <div class="form-group">
-                            <input type="email" name="useremail" value="" placeholder="Enter your email" required="">
-                            <button type="submit" class="btn-style-one">subscribe</button>
+		
+                <div class="col-md-6 col-sm-12 col-xs-12" id="mc_embed_signup">
+                    <form action="https://haskellnow.us17.list-manage.com/subscribe/post?u=d0b6a0de3be5d0db4c9b7bc99&amp;id=559c73a9b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"  class="subscribe-form" target="_blank" novalidate>
+                      <div class="form-group">
+			    <input type="email" value="" name="EMAIL" placeholder="Enter your email" class="required email" id="mce-EMAIL">
+			    <!-- <input type="text" value="" name="FNAME"  placeholder="Enter your first name" class="" id="mce-FNAME"> -->
+			    <!-- <input type="text" value="" name="LNAME"  placeholder="Enter your last name" class="" id="mce-LNAME"> -->
+			    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d0b6a0de3be5d0db4c9b7bc99_559c73a9b0" tabindex="-1" value=""></div>
+			    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-style-one"></div>
+                            <!-- <button type="submit" class="btn-style-one">subscribe</button> -->
                         </div>
                     </form>
                 </div>
@@ -805,5 +811,8 @@
 
 
 <script src="js/script.js"></script>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
 </body>
 </html>
